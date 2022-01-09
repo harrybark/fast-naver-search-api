@@ -1,6 +1,5 @@
 package com.example.fastnaversearchapi.food.wishlist.dto;
 
-import com.example.fastnaversearchapi.food.db.MemoryDbEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,7 +11,7 @@ import java.time.LocalDateTime;
 @Data
 public class WishListDto {
 
-    private int index;
+    private Integer index;
     private String title;                 // 음식명
     private String category;              // 카테고리
     private String address;               // 주소

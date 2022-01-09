@@ -7,9 +7,9 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
 public class WishListEntity extends MemoryDbEntity {
 
     private String title;                 // 음식명
@@ -21,6 +21,5 @@ public class WishListEntity extends MemoryDbEntity {
     private boolean isVisit;              // 방문 여부
     private int visitCount;               // 방문 횟수
     private LocalDateTime lastVisitDate;  // 마지막 방문 일자
-
 
 }

@@ -19,7 +19,7 @@ public abstract class MemoryDbRepositoryAbstract<T extends MemoryDbEntity> imple
         var optionalEntity = db.stream().filter(i -> i.getIndex() == entity.getIndex()).findFirst();
 
         // db에 데이터가 이미 있는 경우
-        if(optionalEntity.isEmpty()){
+        if (optionalEntity.isEmpty()){
             index++;
             entity.setIndex(index);
             db.add(entity);
@@ -43,7 +43,7 @@ public abstract class MemoryDbRepositoryAbstract<T extends MemoryDbEntity> imple
     }
 
     @Override
-    public List<T> listAll() {
+    public List<T> findAll() {
         return db;
     }
 }
